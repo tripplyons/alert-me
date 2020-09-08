@@ -102,3 +102,9 @@ dist
 
 # TernJS port file
 .tern-port
+
+# Local config for alert-me
+config/config.json
+
+# Mac DS_Store
+.DS_Store
