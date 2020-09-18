@@ -1,6 +1,8 @@
-const config = require("./config/config.json")
-
-module.exports = function alert(message) {
-  const provider = require(`./providers/${config.provider}.js`)
+module.exports = function alert(message, providerName) {
+  if(!providerName) {
+    providerName = require('./config/config.json').default
+  }
+  const provider = require(`./providers/${providerName}.js`)
   provider.alert(message)
+  console.log(message)
 }

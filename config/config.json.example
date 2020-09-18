@@ -1,0 +1,10 @@
+{
+  "default": "discord",
+  "discord": {
+    "url": "https://discordapp.com/api/webhooks/______________",
+    "ping": "@everyone"
+  },
+  "echo": {
+    "code": "amzn1.ask.account._________________"
+  }
+}

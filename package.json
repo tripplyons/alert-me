@@ -1,7 +1,7 @@
 {
   "name": "alert-me",
-  "version": "1.0.0",
-  "description": "A shell utility that sends you a message through instant messaging apps (Discord)",
+  "version": "2.0.0",
+  "description": "A shell utility that sends you a message by different means (Discord, Amazon Echo)",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -22,6 +22,7 @@
   "dependencies": {
     "commander": "^6.1.0",
     "discord-webhook-node": "^1.1.8",
-    "get-stdin": "^8.0.0"
+    "get-stdin": "^8.0.0",
+    "r2": "^2.0.1"
   }
 }

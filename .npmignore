@@ -108,3 +108,6 @@ config/*.json
 
 # Mac DS_Store
 .DS_Store
+
+# Files not useful for the module's function, but useful for documentation
+examples/
