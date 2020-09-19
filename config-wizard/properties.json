@@ -1,0 +1,18 @@
+{
+  "discord": [
+    {
+      "property": "url",
+      "message": "What is your webhook URL? "
+    },
+    {
+      "property": "ping",
+      "message": "Who should I ping? (@User#1234, @everyone, etc.) "
+    }
+  ],
+  "echo": [
+    {
+      "property": "code",
+      "message": "What is your code? (Should be emailed to you from notifyme@notifymyecho.com) "
+    }
+  ]
+}

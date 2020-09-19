@@ -111,3 +111,5 @@ config/*.json
 
 # Files not useful for the module's function, but useful for documentation
 examples/
+TODO.md
+config.json.example

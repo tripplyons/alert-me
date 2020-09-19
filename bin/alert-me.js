@@ -1,12 +1,13 @@
 #!/usr/bin/env node
 const {program} = require("commander");
-program.version("2.0.0", "-v", "output the current version");
+program.version(require("../package.json").version, "-v", "output the current version");
 const getStdin = require("get-stdin");
 const readline = require("readline");
 const fs = require("fs");
 const path = require("path");
+const configWizard = require("../config-wizard/config-wizard.js")
 
-program.option("--config", "find the config file")
+program.option("--config", "open the configuration wizard")
 
 program.on("--help", () => {
   console.log("");
@@ -21,7 +22,7 @@ program.on("--help", () => {
 program.parse(process.argv);
 
 if(program.config) {
-  console.log(path.join(__dirname, "../config/config.json"))
+  configWizard()
 } else {
   // Default case: send an alert
   const alertMe = require("..");

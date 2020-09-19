@@ -4,5 +4,4 @@ module.exports = function alert(message, providerName) {
   }
   const provider = require(`./providers/${providerName}.js`)
   provider.alert(message)
-  console.log(message)
 }

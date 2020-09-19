@@ -1,30 +1,45 @@
 # alert-me
-A shell utility that sends you a message by different means (Discord, [Amazon Echo](https://www.thomptronics.com/about/notify-me))
+A shell utility that sends you a message through different means (Discord, [Amazon Echo](https://www.thomptronics.com/about/notify-me))
 
-`echo "message" | alert-me`
+`echo hi | alert-me`
+
+![alert-me working with Discord](examples/discorddemo.gif)
 
 ## Usage
 
-### Installation:
+### Installation
 ```
 npm i -g alert-me
 ```
 
-### Configuration:
+### Setup (Configuration Tool)
 
-To find where to place `config.json`.
 ```
 alert-me --config
 ```
 
-Example JSON can be found in [config/config.json.example](config/config.json.example)
+### Sending messages
 
-### Sending messages (to stdout and the default app):
+#### To the default provider
+
 ```
 echo "message" | alert-me
 ```
 
-### Node API:
+#### To a chosen provider
+
+```
+echo "message" | alert-me discord
+```
+
+#### To all providers
+
+```
+echo "message" | alert-me all
+```
+
+### Node API
+
 ```
 const alertMe = require("alert-me")
 alertMe("message")
